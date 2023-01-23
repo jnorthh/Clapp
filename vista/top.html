@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clapp</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html" class="header_logo_a">
+        <div class="header_logo"><p>CLAPP</p></div>
+    </a>
+        <div class="nav_header_son">
+            <input type="search" placeholder="   Search beats, songs and artists" class="nav_header_search_bar" aria-label="search">
+        </div>
+        <div class="header_nav">
+            <ul class="nav_list">
+                <a href="../vista/discover.html">
+                <li class="list_item">Discover</li>
+            </a>
+            <a href="">
+                <li class="list_item">Account</li>
+            </a>
+            <a href="">
+                <li class="list_item">Upload content</li>
+            </a>
+            <a href="">
+                <li class="list_item_account">Sign up</li>
+            </a>
+            <a href="">
+                <li class="list_item_account">Login</li>
+            </a>
+            </ul>
+        </div>
+    </div>
+        </header>
+   <section class="hero">
+    <div class="hero_heading">
+        <h1>DISCOVER</h1>
+    </div>
+    <div class="generos">
+        <a href="./discover.html">Trending</a>
+        <a href="./top.html" class="blow">Top</a>
+        <a href="">Pop</a>
+        <a href="">Hip hop</a>
+        <a href="">Rock</a>
+        <a href="">Country</a>
+        <a href="">Electronic</a>
+        <a href="">Reggaeton</a>
+        <a href="">Reggae</a>
+        <a href="">Funk</a>
+        <a href="">R&B</a>
+    </div>
+    <div class="discover_grid">
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: GIselle</p>
+            <h1>Fatherfg (pt1)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="PlayBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+        <div class="genero_grid_son">
+            <p>Producer: FARUCJ</p>
+            <h1>Good day (wake up)</h1>
+            <div class="track">
+                <img src="../img/play.png" alt="" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+
+    </div>
+   </section>
+   
+    <footer>
+        <div class="footer">
+            <div class="footer_son">
+                <div class="stay_tuned">
+                <p>Stay tuned</p>
+            </div>
+            </div>
+            <div class="footer_son">
+                <form action="" class="form_footer">
+                    <input type="text" placeholder="   Your email address" class="your_email">
+                    <button class="sign_btn">Sign up</button>
+                </form>
+            </div>
+            <div class="footer_son"></div>
+        </div>
+    </footer>
+    </header>
+    <script>
+        var playBtn = document.getElementById("playBtn");
+        
+        var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: '#ddd',
+    progressColor: 'rgb(103, 149, 255)',
+    barWidth: 4,
+    responsive: true,
+    height: 30,
+    barRadius: 4
+});
+    wavesurfer.load("../img/y2mate.com - Jan Blomqvist  The Space In Between Ben Böhmer Remix.mp3");
+    playBtn.onclick = function(){
+        wavesurfer.playPause();
+        if(playBtn.src.includes("play.png")){
+            playBtn.src = "../img/pause.png";
+        }else{
+            playBtn.src = "../img/play.png";  
+        }
+    }
+    wavesurfer.on('finish', function(){
+        playBtn.src = "../img/play.png";  
+        wavesurfer.stop();
+    })
+    </script>
+</body>
+</html>
