@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clapp</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
@@ -32,7 +33,7 @@
             <a href="./singup.html">
                 <li class="list_item_account">Sign up</li>
             </a>
-            <a href="">
+            <a href="./login.html">
                 <li class="list_item_account">Login</li>
             </a>
             </ul>
@@ -41,7 +42,7 @@
         </header>
    <section class="hero">
     <div class="hero_heading">
-        <h1>DISCOVER</h1>
+        <h1>Discover genres</h1>
     </div>
     <div class="generos">
         <a href="./discover.html" class="blow">Trending</a>
@@ -153,6 +154,13 @@
                     <input type="text" placeholder="   Your email address" class="your_email">
                     <button class="sign_btn">Sign up</button>
                 </form>
+                <div class="redes_footer">
+                    <a href=""><i class="fa fa-instagram"> </i></a>
+                    <a href=""><i class="fa fa-facebook"> </i></a>
+                </div>
+                <div class="copyright">
+                    <p>Designed by Jose Cortes © 2022 for Clapp</p>
+                </div>
             </div>
             <div class="footer_son"></div>
         </div>
@@ -163,14 +171,14 @@
         
         var wavesurfer = WaveSurfer.create({
     container: '#waveform',
-    waveColor: '#ddd',
-    progressColor: 'rgb(103, 149, 255)',
+    waveColor: '#666',
+    progressColor: 'rgb(63 73 78)',
     barWidth: 4,
     responsive: true,
-    height: 30,
+    height: 35,
     barRadius: 4
 });
-    wavesurfer.load("../img/y2mate.com - Jan Blomqvist  The Space In Between Ben Böhmer Remix.mp3");
+    wavesurfer.load("../img/y2mate.com - Fred again feat The Blessed Madonna  Marea Weve Lost Dancing Official Audio.mp3");
     playBtn.onclick = function(){
         wavesurfer.playPause();
         if(playBtn.src.includes("play.png")){

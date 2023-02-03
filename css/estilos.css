@@ -5,7 +5,7 @@
 }
 body{
     font-family:DIN Next,sans-serif;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(32 34 37);
 }
 .header{
     display: grid;
@@ -15,16 +15,20 @@ body{
     padding: 20px 5px 20px 5px;
     width: 100%;
     opacity: 100%;
-    background-color: white;
+    background-color: rgb(32 34 37);
+    border-bottom: 0.5px solid rgb(50, 50, 50);
 }
 .nav_header_search_bar{
     display: flex;
     height: 50px;
-    width: 1000px;
+    width: 1200px;
     border-radius: 8px;
-    border: none;
+    border: 1.8px solid rgb(139 147 155);
     font-size: 17px;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(32, 34, 37);
+}
+.nav_header_search_bar:hover{
+    background-color:rgb(42, 44, 47) ;
 }
 .nav_header_son{
     display: flex;
@@ -33,13 +37,14 @@ body{
 .header_logo{
     display: flex;
     align-self: center;
-    color: black;
+    color: white;
     padding-left: 30px;
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 900;
     text-align: center;
     padding-top: 9px;
 }
+
 .header_logo_a{
     text-decoration: none;
     text-align: center;
@@ -62,7 +67,7 @@ body{
     display: flex;
     padding-left: 45px;
     font-size: 19px;
-    color: black;
+    color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 900;
@@ -71,7 +76,7 @@ body{
     display: flex;
     padding-left: 45px;
     font-size: 19px;
-    color:black ;
+    color:white ;
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -90,19 +95,20 @@ body{
     justify-content: center;
     padding-top: 150px;
     font-size: 28px;
+    color: white;
 }
 .body_a{
     text-decoration: none;
     margin-left: 40px;
-    color: rgb(80, 80, 80);
+    color: white;
     font-size: 21px;
     padding-bottom: 8px;
     font-weight: 900;
     transition: ease 0.6s;
 }
 .body_a:hover{
-    color: black;
-    border-bottom: 1.5px solid rgb(0, 0, 0);
+    color: rgb(80, 80, 80);
+    border-bottom: 1.5px solid white;
 }
 .body{
     display: grid;
@@ -120,20 +126,18 @@ body{
 
 }
 .btn_see_all{
-    height: 40px;
-    width: 150px;
-    border-radius: 5px;
-    border: none;
-    font-size: 15px;
+    height: 48px;
+    width: 120px;
+    border-radius: 10px;
+    border: 1.8px solid rgb(139 147 155);
+    font-size: 14px;
     color: white;
-    background-color:rgb(73, 158, 255) ;
+    background-color:rgb(32, 34, 37) ;
     font-weight: 900;
-    transition: ease 0.5s;
+    text-align: center;
 }
 .btn_see_all:hover{
-background-image: url(../img/hdbHvD-724iKsU-Px1GtabFEiLQT0nCBKmNIrH0xPmV-SRYVvOgkV-QE439ifs7V_iV8cPZ1KuZvmbWP1vF-wYhq89--Y0djJFcM.avif);
-    color: black;
-   
+    border: 2px solid rgb(189 177 185);
 }
 .h24h{
     gap: 10px;
@@ -143,7 +147,7 @@ background-image: url(../img/hdbHvD-724iKsU-Px1GtabFEiLQT0nCBKmNIrH0xPmV-SRYVvOg
     justify-content: flex-start;
     padding-top: 35px;
     font-weight: 500;
-    color: rgb(37, 37, 37);
+    color: white;
 
 }
 .song_cards{
@@ -174,24 +178,27 @@ padding-top: 15px;
     text-align: center;
     border-radius: 15px;
     transition: ease 0.2s;
+    background-color: rgb(49 51 57);
     
   }
   .card:hover{
-    box-shadow: 5px 10px 15px 0 rgba(57, 82, 151, 0.2);
+    box-shadow: 5px 8px 8px 0 rgba(40, 42, 45, 0.1);
+   margin-top: 1px;
   }
   
   .price {
-    color: rgb(106, 106, 106);
+    color: rgb(139 147 155);
     font-size: 16px;
   }
   .price_amm{
-    color: black;
+    color: white;
     font-size: 17px;
   }
   .user_type{
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 5px;
+    color: white;
   }
 .lola{
     display: grid;
@@ -209,13 +216,14 @@ padding-top: 15px;
     grid-template-rows: auto auto;
     height: 300px;
     align-content: center;
-    background-color:rgb(56, 121, 194) ;
+    background-color:rgb(49 51 57);
 }
 .your_email{
     height: 54px;
     width: 350px;
     border-radius: 8px;
-    border: 0.5px solid rgb(199, 199, 199);
+    background-color: rgb(49 51 57);
+    border: 1px solid rgb(199, 199, 199);
     font-size: 18px;
 }
 .sign_btn{
@@ -223,7 +231,7 @@ padding-top: 15px;
     width: 100px;
     border-radius: 8px;
    border: none;
-    background-color: rgb(141, 191, 248);
+    background-color: rgb(83 83 88);
     color: white;
     font-size: 18px;
 }
@@ -237,32 +245,48 @@ padding-top: 15px;
     justify-content: center;
     padding-bottom: 20px;
     font-size: 25px;
-    margin-right: 350px;
     color: white;
     font-weight: 800;
+    margin-bottom: 15px;
 }
 .nono{
     display: flex;
     gap: 20px;
-    width:639px;
+    width:660px;
     height: fit-content;
     text-align: center;
     border-radius: 15px;
     transition: ease 0.2s;
-    padding: 10px;
-    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 0px 20px 10px;
 }
 .nono:hover{
-    box-shadow: 0px 6px 10px 0 rgba(57, 82, 151, 0.2);
+    background-color: rgb(40, 42, 45);
+}
+.chupa{
+    display: flex;
+    align-self: center;
+    height: 45px;
+    width: 210px;
+    overflow: hidden;
+    margin-right: 15px;
 }
 .topnum{
     display: flex;
     text-align: center;
-    color: rgb(65, 65, 65);
+    color: rgb(84, 84, 84);
     align-self: center;font-weight: 900;
-    font-size: 23px;
+    font-size: 22px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.topnum1{
+    display: flex;
+    text-align: center;
+    color: rgb(84, 84, 84);
+    align-self: center;font-weight: 900;
+    font-size: 22px;
+    margin-left: 8px;
+    
 }
 .sisi{
     display: flex;
@@ -270,15 +294,17 @@ padding-top: 15px;
     align-self: center;
     font-size: 17px;
     font-weight: 700;
+    color: white;
 }
 .sisis{
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 0px;
     text-align: center;
     align-self: center;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
+    color: white;
 }
 .prp{
     border-radius: 10px;
@@ -287,10 +313,11 @@ padding-top: 15px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 50px;
     margin-top: 15px;
-    row-gap: 30px;
 }
 .abuelo{
     display: grid;
@@ -301,27 +328,27 @@ padding-top: 15px;
     display: flex;
     font-size: 15px;
     font-weight:700;
-    color: rgb(50, 50, 50);
+    color: rgb(139 147 155);
     padding-left: 185px;
 }
 .header_grpa1{
     display: flex;
     font-size: 15px;
     font-weight:700;
-    color: rgb(50, 50, 50);
+    color: rgb(181, 181, 181);
 }
 .header_grpa2{
     display: flex;
     font-size: 15px;
     font-weight:700;
-    color: rgb(50, 50, 50);
+    color: rgb(181, 181, 181);
 
 }
 .header_grpa3{
     display: flex;
     font-size: 15px;
     font-weight:700;
-    color: rgb(50, 50, 50);
+    color: rgb(181, 181, 181);
 }
 .hero{
     padding-top: 140px;
@@ -330,7 +357,9 @@ padding-top: 15px;
     padding-top: 10px;
     display: flex;
     padding-left: 50px;
-    font-size: 23px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
 }
 .generos{
     display: flex;
@@ -340,7 +369,7 @@ padding-top: 15px;
 .generos a{
     display: flex;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 700;
     
@@ -351,21 +380,23 @@ padding-top: 15px;
     grid-template-columns: auto auto;
     row-gap: 35px;
     column-gap: 35px;
-    padding-bottom: 40px;
+    padding-bottom: 180px;
     padding-top: 30px;
 }
 .genero_grid_son{
     display: grid;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
     width: 90%;
-    max-width: 900px;
-   background: white;
-   color: #555;
+    max-width: 1200px;
+   background: rgb(49 51 57);
+   color: #666;
    border-radius: 8px;
-   padding: 20px 30px 30px 20px;
+   padding: 30px 30px 40px 20px;
+   gap: 10px;
 }
 .genero_grid_son:hover{
-    box-shadow: 0 10px 16px 0 rgba(57, 82, 151, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(49, 51, 57, 0.2);
+    background: rgb(51 53 59);
 }
 .track{
     display: flex;
@@ -379,10 +410,10 @@ padding-top: 15px;
 }
 .track div{
     flex: 1;
-    width: 400px;
+    width: 500px;
 }
 .blow{
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.5px solid white;
     padding-bottom: 10px;
 }
 .form_signup{
@@ -398,19 +429,46 @@ padding-top: 15px;
     justify-content: center;
     font-size: 30px;
     padding-bottom: 30px;
+    color: white;
 }
 .foo{
     padding-top: 270px;
+    color: white;
 }
 form input{
     height: 50px;
     width: 250px;
+    border-radius: 8px;
+    border: 1.8px solid rgb(139 147 155);
+    background-color: rgb(32, 34, 37);
 }
 form button{
     height: 50px;
     width: 253px;  
-    background-color: rgb(87, 175, 247);
+    border: 1.8px solid rgb(139 147 155);
+    background-color: rgb(40, 42, 46);
     color: white;
-    border: none;
     font-size: 16px;
+    border-radius: 8px;
+}
+.redes_footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.redes_footer a{
+    text-decoration: none;
+    color: rgb(32 34 37);
+    font-size: 45px;
+}
+.redes_footer a:hover{
+    font-size: 46px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: rgb(30 32 35);
 }
