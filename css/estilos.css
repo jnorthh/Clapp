@@ -594,9 +594,18 @@ form button{
     }
      }
      @media screen and (max-width: 390px ) {
+        form input{
+            height: 45px;
+            width: 220px;
+        }
+        form button{
+            height: 45px;
+            width: 220px;  
+            font-size: 14px;
+        }
         .navbar-toggler{
             margin-right: 10px;
-            background-color: rgb(42 44 47);
+            background-color: rgb(52 54 57);
         }
         .track{
             width: 290px;
@@ -637,8 +646,11 @@ form button{
            display: none;
         }
         h1{
-           font-size: 25px;
+           font-size: 22px;
            text-align: center;
+        }
+        .hero{
+            padding-top: 50px;
         }
         .hero_heading{
             justify-content: center;
@@ -646,10 +658,13 @@ form button{
         }
         .your_email{
            width: auto;
+           height: 40px;
+        }
+        .sign_btn{
+            height: 40px;
         }
        .btn_see_all{
-           width: 60px;
-           height: 30px;
+           height: 20px;
            font-size: 12px;
        }
        .body_nav{
