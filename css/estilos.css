@@ -472,3 +472,61 @@ form button{
     font-size: 12px;
     color: rgb(30 32 35);
 }
+@media screen and (max-width: 428px ) {
+     .padree{
+        grid-template-columns: auto;
+        margin: 0px;
+     }
+     .song_cards{
+        grid-template-columns: auto;
+     }
+     .nono{
+        width: auto;
+     }
+     .abuelo{
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        gap: 10px;
+     }
+     .sisis{
+        display: none;
+     }
+     h1{
+        font-size: 15px;
+        text-align: center;
+     }
+     .your_email{
+        width: auto;
+     }
+    .btn_see_all{
+        width: auto;
+        font-size: 15px;
+       padding: 10px 10px 10px 10px;
+    }
+    .header_grpa{
+        padding: 0px;
+    }
+    .header_grpa1{
+        padding: 0px;
+    }
+    .header_grpa2{
+        padding: 0px;
+    }
+    .header_grpa3{
+        padding: 0px;
+    }
+    .card{
+        width: 358px;
+        height: 390px;
+    }
+    .imagenpop{
+        height: 275px;
+    }
+    .h24h{
+        font-size: 20px;
+    }
+    .chupa{
+        width: 170px;
+    }
+     }
+}
