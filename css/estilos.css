@@ -594,6 +594,24 @@ form button{
     }
      }
      @media screen and (max-width: 390px ) {
+        .navbar-toggler{
+            margin-right: 10px;
+            background-color: rgb(42 44 47);
+        }
+        .track{
+            width: 290px;
+        }
+        .discover_grid{
+            grid-template-columns: auto;
+            margin-right: 15px;
+        }
+        .generos{
+            flex-wrap: wrap;
+            font-size: 10px;
+        }
+        .generos a{
+            font-size: 17px;
+        }
         .me-2{
            display: none;
         }
@@ -619,8 +637,12 @@ form button{
            display: none;
         }
         h1{
-           font-size: 15px;
+           font-size: 25px;
            text-align: center;
+        }
+        .hero_heading{
+            justify-content: center;
+            padding: 0px;
         }
         .your_email{
            width: auto;
